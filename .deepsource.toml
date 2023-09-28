@@ -1,7 +1,7 @@
 version = 1
 
 [[analyzers]]
-name = "ruby"
+name = "python"
 enabled = true
 
 [[analyzers]]

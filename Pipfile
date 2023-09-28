@@ -1,0 +1,32 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[packages]
+mkdocs = "==1.5.3"
+mkdocs-material = "==9.4.2"
+python-markdown-math = "==0.8"
+Pygments = "==2.16.1"
+prompt_toolkit = "==3.0.39"
+pyyaml = "==6.0.1"
+Jinja2 = "==3.1.2"
+pillow = "*"
+cairosvg = "*"
+markdown-link-attr-modifier = "*"
+
+[dev-packages]
+invoke = "*"
+
+[requires]
+python_version = "3.8"
+
+[pipenv]
+allow_prereleases = true
+
+[scripts]
+version = "mkdocs --version"
+help = "mkdocs --help"
+serve = "inv serve"
+build = "mkdocs build"
+deploy = "mkdocs gh-deploy"
